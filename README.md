@@ -61,6 +61,7 @@ Select Sum (CustomerId) as TOTALNORTHSALES From [LITA Customer Data]
 where region = 'north'
 ```
 -----Most popular subscription type----
+```SQL
 select SubscriptionType,
         CASE
           WHEN SubscriptionType IN ('Basic') then '1'
@@ -96,6 +97,7 @@ where canceled = 0
 ```
 
 -----Canceled their subscription within 6 months----
+```SQL
 select CustomerId,
         CASE
           WHEN CustomerId IN ('201') then '1'
@@ -117,4 +119,8 @@ Group by CustomerId
 ```SQL
 Select avg (subscription_duration) as average from [LITA Customer Data]
 ```
-```SQL
+#### Data Visualization
+
+![image](https://github.com/user-attachments/assets/07b091ed-0630-4bc6-931d-5b59c3b4d56d)
+
+##
