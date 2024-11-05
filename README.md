@@ -18,19 +18,21 @@ Data Cleaning and preparation
 
 
 ### Project Title: Customer Subscription Data
+---------
 
 ### Project Overview 
-
+---------
 This Data Analysis project aims to generate insights into customer data for a subscription service to identify segments and trend over the previous years. By analysing the various parameters in the data received I explored customer data to understand customer behaviour, subscription duration and  subscription types to make reasonable decisions in promoting better services to the customers.
 
 ### Key Findings
+--------
 Identify key trends in:
 - Cancellations and
 - Renewal of subscription plans
 
 
 ### Data Source
-
+-------
 The primary source of the Data used is LITA Capstone Project- Customer Data.xslx
 
 #### Tools used/Methodology 
@@ -120,6 +122,7 @@ Group by CustomerId
 Select avg (subscription_duration) as average from [LITA Customer Data]
 ```
 #### Data Visualization
+------
 
 ![image](https://github.com/user-attachments/assets/07b091ed-0630-4bc6-931d-5b59c3b4d56d)
 
@@ -127,4 +130,13 @@ Select avg (subscription_duration) as average from [LITA Customer Data]
 
 ![image](https://github.com/user-attachments/assets/681c78c7-6df0-4d7f-be03-74f5dcd8c1f9)
 
+![image](https://github.com/user-attachments/assets/b5afbf7e-3cec-4fb7-a858-1d5a76e1083c)
+
+From the diagrams above, the highest-selling subscription type was Basic with the total of 75 million for both previous years in region(North and East).
+
+In Summary, baed on the analysis carried out basic might likely have the highest sales in the coming year
+
+
+Vote of thanks
+I really appreciated Mummy Folu Adeboye and all LITA Trainees, you all are the best. Thank you for this great insights in the tech world may God bless you all Amen.
 
