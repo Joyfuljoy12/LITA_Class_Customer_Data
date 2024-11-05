@@ -1,16 +1,23 @@
 # LITA_Class_Customer_Data
 
 ## OUTLINE 
-#### Project Title 
-#### Project Overview 
-#### Key Findings
-#### Data Source
-#### Methodology 
-#### Data Cleaning and preparation 
-#### Data Visualization 
+[Project Title](#project-title) 
+
+[Project Overview](#project-overview) 
+
+[Key Findings](#key-findings)
+
+[Data Source](#data-source)
+
+Methodology 
+
+Data Cleaning and preparation
+
+[Data Visualization](#data-visualization) 
 
 
-### Project Title: Sales Data
+
+### Project Title: Customer Subscription Data
 
 ### Project Overview 
 
@@ -24,7 +31,7 @@ Identify key trends in:
 
 ### Data Source
 
-The primary source of the Data used is LITA Capstone Project- Sales Data.xslx
+The primary source of the Data used is LITA Capstone Project- Customer Data.xslx
 
 ### Tools used/Methodology 
 
@@ -41,5 +48,5 @@ Some basic action were taken, they include:
 3. Data Inspection- Highlighting, inserting into tables and changing formatting or possible errors/blank space
 4. Data Cleaning
 
-### Data Visualization 
+### Data analysis 
 
