@@ -33,20 +33,33 @@ Identify key trends in:
 
 The primary source of the Data used is LITA Capstone Project- Customer Data.xslx
 
-### Tools used/Methodology 
-
-- Microsoft Excel for Data cleaning
+#### Tools used/Methodology 
+------
+- Microsoft Excel [Download Here](https://www.microscoft.com)
+  1. Data cleaning
+  2. Analysis
+  3. Visualization
 - SQL- Structured Query Language
 - Power BI- Power Business Intelligence for Data Visualization
 - GitHub for Portfolio building
 
 ### Data cleaning and preparation 
-
+----
 Some basic action were taken, they include:
 1. Data downloading from LMS (LITA- Data Analysis Class)
 2. Data loading from each platforms such as Excel, SQL and Power BI
 3. Data Inspection- Highlighting, inserting into tables and changing formatting or possible errors/blank space
 4. Data Cleaning
 
-### Data analysis 
+#### Data Analysis
+----
+This is where we include some basic lines of code or queries and some DAX expressions used during the analysis;
 
+-----Total number of customer from each region----
+``` SQL
+Select Sum (CustomerId) as TOTALNORTHSALES From [LITA Customer Data]
+where region = 'north'
+```
+-----Most popular subscription type----
+select SubscriptionType,
+Where product = 'Shirt'
