@@ -62,4 +62,59 @@ where region = 'north'
 ```
 -----Most popular subscription type----
 select SubscriptionType,
-Where product = 'Shirt'
+        CASE
+          WHEN SubscriptionType IN ('Basic') then '1'
+          WHEN SubscriptionType IN ('Premium') then '2'
+          Else '3'
+End as SubscriptionGroup,
+sum(Revenue) as Totalsales from [LITA Customer Data]
+where CustomerId in ('201', '202','203','204', '205', '206', '207', '208', '209', '210')
+Group by SubscriptionType
+order by 3 asc
+```
+-----Total revenue by subscription ----
+``` SQL
+Select Sum (revenue) as BASICREVENUE From [LITA Customer Data]
+where SubscriptionType = 'Basic'
+```
+-----Top 3 region----
+``` SQL
+Select top 3 * from [LITA Customer Data]
+where cancelled in (1,0)
+```
+
+-----Total number of active cancellation----
+``` SQL
+Select count (Canceled) as ACTIVECANCELLATION From [LITA Customer Data]
+where canceled = 1
+```
+
+-----Total number of false cancellation----
+``` SQL
+Select count (Canceled) as falseCANCELLATION From [LITA Customer Data]
+where canceled = 0
+```
+
+-----Canceled their subscription within 6 months----
+select CustomerId,
+        CASE
+          WHEN CustomerId IN ('201') then '1'
+          WHEN CustomerId IN ('202') then '2'
+          WHEN CustomerId IN ('203') then '3'
+          WHEN CustomerId IN ('204') then '4'
+          WHEN CustomerId IN ('205') then '5'
+          WHEN CustomerId IN ('206') then '6'
+          WHEN CustomerId IN ('207') then '7'
+          WHEN CustomerId IN ('208') then '8'
+          WHEN CustomerId IN ('209') then '9'
+          Else '0'
+End as CustomerId,
+count(Canceled) as Totalcanceled from [LITA Customer Data]
+where SubscriptionSTART in ('2022-01-31', '2022-06-30') AND Cancled in (0)
+Group by CustomerId
+```
+-------Average subscription duration----
+```SQL
+Select avg (subscription_duration) as average from [LITA Customer Data]
+```
+```SQL
