@@ -125,3 +125,6 @@ Select avg (subscription_duration) as average from [LITA Customer Data]
 
 ![image](https://github.com/user-attachments/assets/3915d921-9c88-4192-9874-1b9afc583694)
 
+![image](https://github.com/user-attachments/assets/681c78c7-6df0-4d7f-be03-74f5dcd8c1f9)
+
+
